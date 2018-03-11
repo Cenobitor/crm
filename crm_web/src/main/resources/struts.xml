@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.ui.theme" value="simple"></constant>
+    <constant name="struts.multipart.maxSize" value="209715200"></constant>
+
+    <!--登录拦截器-->
+    <package name="base" extends="json-default">
+        <!--1声明拦截器-->
+        <interceptors>
+            <interceptor name="loginIntercetory" class="com.pri.crm.web.interceptor.LoginInterceptor">
+                <param name="excludeMethods">login,register</param>
+            </interceptor>
+            <!-- 2. 表示有一个拦截器栈，里面有自己的拦截器，也有默认的拦截器 -->
+            <interceptor-stack name="baseStack">
+                <interceptor-ref name="loginIntercetory"/>
+                <interceptor-ref name="defaultStack"/>
+            </interceptor-stack>
+        </interceptors>
+        <!--3.使用拦截器-->
+        <default-interceptor-ref name="baseStack"/>
+
+        <!--跳转resulte-->
+        <global-results>
+            <result name="login" type="redirect">/login.jsp</result>
+        </global-results>
+    </package>
+
+</struts>

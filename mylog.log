@@ -1,0 +1,337 @@
+17:50:02,265  INFO ContextLoader:307 - Root WebApplicationContext: initialization started
+17:50:02,451  INFO XmlWebApplicationContext:578 - Refreshing Root WebApplicationContext: startup date [Sun Mar 11 17:50:02 CST 2018]; root of context hierarchy
+17:50:02,561  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [/Users/Shared/练习/就业班/day62_maven/crm/crm_web/target/classes/spring/applicationContext_web.xml]
+17:50:02,902  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [/Users/Shared/练习/就业班/day62_maven/crm/crm_dao/target/classes/spring/applicationContext.xml]
+17:50:03,313  INFO PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [spring/jdbc.properties]
+17:50:03,336  INFO AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+17:50:03,540  INFO MLog:80 - MLog clients using log4j logging.
+17:50:03,824  INFO C3P0Registry:204 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+17:50:04,191  INFO Version:37 - HHH000412: Hibernate Core {5.0.7.Final}
+17:50:04,194  INFO Environment:213 - HHH000206: hibernate.properties not found
+17:50:04,196  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+17:50:04,271  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17:50:04,518  INFO AbstractPoolBackedDataSource:462 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge9m59u5ofuhdl5rfad|56e9a474, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9m59u5ofuhdl5rfad|56e9a474, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql:///crm?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+17:50:05,056  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+17:50:05,107  INFO LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+17:50:05,368  WARN UUIDHexGenerator:42 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+17:50:05,914  INFO SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+17:50:06,228  INFO HibernateTransactionManager:357 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge9m59u5ofuhdl5rfad|56e9a474, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9m59u5ofuhdl5rfad|56e9a474, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql:///crm?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+17:50:06,243  WARN XmlWebApplicationContext:546 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [cn.dsna.util.images.ValidateCode] for bean with name 'validateCode' defined in file [/Users/Shared/练习/就业班/day62_maven/crm/crm_web/target/classes/spring/applicationContext_web.xml]; nested exception is java.lang.ClassNotFoundException: cn.dsna.util.images.ValidateCode
+17:50:06,258 ERROR ContextLoader:353 - Context initialization failed
+org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [cn.dsna.util.images.ValidateCode] for bean with name 'validateCode' defined in file [/Users/Shared/练习/就业班/day62_maven/crm/crm_web/target/classes/spring/applicationContext_web.xml]; nested exception is java.lang.ClassNotFoundException: cn.dsna.util.images.ValidateCode
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1445)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:445)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:530)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:523)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1162)
+	at org.springframework.context.event.EventListenerMethodProcessor.getEventListenerFactories(EventListenerMethodProcessor.java:119)
+	at org.springframework.context.event.EventListenerMethodProcessor.afterSingletonsInstantiated(EventListenerMethodProcessor.java:74)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:792)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4135)
+	at org.apache.catalina.core.StandardContext.start(StandardContext.java:4630)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+	at org.apache.catalina.core.StandardHost.start(StandardHost.java:785)
+	at org.apache.catalina.core.ContainerBase.start(ContainerBase.java:1045)
+	at org.apache.catalina.core.StandardEngine.start(StandardEngine.java:445)
+	at org.apache.catalina.startup.Embedded.start(Embedded.java:825)
+	at org.codehaus.mojo.tomcat.AbstractRunMojo.startContainer(AbstractRunMojo.java:558)
+	at org.codehaus.mojo.tomcat.AbstractRunMojo.execute(AbstractRunMojo.java:255)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:146)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:309)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:194)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:107)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:955)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:290)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
+Caused by: java.lang.ClassNotFoundException: cn.dsna.util.images.ValidateCode
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1645)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1491)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:250)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:394)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1397)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1344)
+	... 48 more
+17:52:09,218  INFO ContextLoader:307 - Root WebApplicationContext: initialization started
+17:52:09,377  INFO XmlWebApplicationContext:578 - Refreshing Root WebApplicationContext: startup date [Sun Mar 11 17:52:09 CST 2018]; root of context hierarchy
+17:52:09,481  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [/Users/Shared/练习/就业班/day62_maven/crm/crm_web/target/classes/spring/applicationContext_web.xml]
+17:52:09,914  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [/Users/Shared/练习/就业班/day62_maven/crm/crm_dao/target/classes/spring/applicationContext.xml]
+17:52:10,279  INFO PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [spring/jdbc.properties]
+17:52:10,292  INFO AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+17:52:10,446  INFO MLog:80 - MLog clients using log4j logging.
+17:52:10,759  INFO C3P0Registry:204 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+17:52:11,018  INFO Version:37 - HHH000412: Hibernate Core {5.0.7.Final}
+17:52:11,021  INFO Environment:213 - HHH000206: hibernate.properties not found
+17:52:11,023  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+17:52:11,094  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+17:52:11,371  INFO AbstractPoolBackedDataSource:462 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge9m59u5oikfc1i5t52k|6c8dbf56, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9m59u5oikfc1i5t52k|6c8dbf56, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql:///crm?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+17:52:11,867  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+17:52:11,938  INFO LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+17:52:12,202  WARN UUIDHexGenerator:42 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+17:52:12,681  INFO SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+17:52:12,981  INFO HibernateTransactionManager:357 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge9m59u5oikfc1i5t52k|6c8dbf56, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9m59u5oikfc1i5t52k|6c8dbf56, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql:///crm?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+17:52:13,067  INFO ContextLoader:347 - Root WebApplicationContext: initialization completed in 3845 ms
+17:52:13,344  INFO XmlConfigurationProvider:46 - Parsing configuration file [struts-default.xml]
+17:52:13,482  INFO XmlConfigurationProvider:46 - Parsing configuration file [struts-plugin.xml]
+17:52:13,507  INFO XmlConfigurationProvider:46 - Parsing configuration file [struts.xml]
+17:52:13,510  INFO AbstractBeanSelectionProvider:46 - Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+17:52:13,510  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+17:52:13,510  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+17:52:13,511  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+17:52:13,511  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+17:52:13,511  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+17:52:13,511  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+17:52:13,512  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+17:52:13,512  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+17:52:13,512  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+17:52:13,512  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+17:52:13,513  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+17:52:13,513  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+17:52:13,513  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+17:52:13,513  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+17:52:13,513  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+17:52:13,514  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+17:52:13,514  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+17:52:13,514  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+17:52:13,514  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+17:52:13,515  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+17:52:13,515  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+17:52:13,515  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+17:52:13,516  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+17:52:13,516  INFO AbstractBeanSelectionProvider:46 - Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+17:52:13,516  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+17:52:13,518  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+17:52:13,518  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+17:52:13,519  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+17:52:13,519  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+17:52:13,519  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+17:52:13,520  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+17:52:13,520  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+17:52:13,520  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+17:52:13,520  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+17:52:13,520  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+17:52:13,521  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+17:52:13,521  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+17:52:13,521  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+17:52:13,521  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+17:52:13,547  INFO StrutsSpringObjectFactory:46 - Initializing Struts-Spring integration...
+17:52:13,548  INFO SpringObjectFactory:46 - Setting autowire strategy to name
+17:52:13,548  INFO StrutsSpringObjectFactory:46 - ... initialized Struts-Spring integration successfully
+17:52:25,873  WARN Dispatcher:68 - Could not find action or result: /crm_web/user_createVerificationCode
+There is no Action mapped for namespace [/] and action name [user_createVerificationCode] associated with context path [/crm_web]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:748)
+17:52:41,111  WARN Dispatcher:68 - Could not find action or result: /crm_web/user_createVerificationCode
+There is no Action mapped for namespace [/] and action name [user_createVerificationCode] associated with context path [/crm_web]. - [unknown location]
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185)
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63)
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:37)
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:554)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:748)
+17:52:45,457  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+17:52:45,599  WARN HqlSqlWalker:992 - [DEPRECATION] Encountered positional parameter near line 1, column 48 in HQL: [from com.pri.crm.domain.User where user_code = ? and user_password = ? and user_state = 1].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+17:52:45,601  WARN HqlSqlWalker:992 - [DEPRECATION] Encountered positional parameter near line 1, column 70 in HQL: [from com.pri.crm.domain.User where user_code = ? and user_password = ? and user_state = 1].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+17:52:56,936  WARN HqlSqlWalker:992 - [DEPRECATION] Encountered positional parameter near line 1, column 57 in HQL: [from com.pri.crm.domain.BaseDict where dict_type_code = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+18:44:32,246  INFO ContextLoader:307 - Root WebApplicationContext: initialization started
+18:44:32,405  INFO XmlWebApplicationContext:578 - Refreshing Root WebApplicationContext: startup date [Sun Mar 11 18:44:32 CST 2018]; root of context hierarchy
+18:44:32,462  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [/Users/Shared/练习/就业班/day62_maven/crm/crm_web/target/classes/spring/applicationContext_web.xml]
+18:44:32,886  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [/Users/Shared/练习/就业班/day62_maven/crm/crm_dao/target/classes/spring/applicationContext.xml]
+18:44:33,167  INFO PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [spring/jdbc.properties]
+18:44:33,214  INFO AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+18:44:33,370  INFO MLog:80 - MLog clients using log4j logging.
+18:44:33,719  INFO C3P0Registry:204 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+18:44:33,987  WARN XmlWebApplicationContext:546 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDao': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [/Users/Shared/练习/就业班/day62_maven/crm/crm_dao/target/classes/spring/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+18:44:34,001 ERROR ContextLoader:353 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDao': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [/Users/Shared/练习/就业班/day62_maven/crm/crm_dao/target/classes/spring/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDao': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [/Users/Shared/练习/就业班/day62_maven/crm/crm_dao/target/classes/spring/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:512)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:486)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:615)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:169)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	... 22 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sessionFactory' defined in file [/Users/Shared/练习/就业班/day62_maven/crm/crm_dao/target/classes/spring/applicationContext.xml]: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:512)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:486)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:615)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:178)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	... 35 more
+Caused by: java.lang.NoClassDefFoundError: javax/xml/bind/JAXBException
+	at org.hibernate.boot.spi.XmlMappingBinderAccess.<init>(XmlMappingBinderAccess.java:43)
+	at org.hibernate.boot.MetadataSources.<init>(MetadataSources.java:87)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:124)
+	at org.hibernate.cfg.Configuration.<init>(Configuration.java:119)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBuilder.<init>(LocalSessionFactoryBuilder.java:108)
+	at org.springframework.orm.hibernate5.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:309)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 47 more
+Caused by: java.lang.ClassNotFoundException: javax.xml.bind.JAXBException
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1713)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1558)
+	... 55 more
+19:11:33,322  INFO ContextLoader:307 - Root WebApplicationContext: initialization started
+19:11:33,485  INFO XmlWebApplicationContext:578 - Refreshing Root WebApplicationContext: startup date [Sun Mar 11 19:11:33 CST 2018]; root of context hierarchy
+19:11:33,547  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [/Users/Shared/练习/就业班/day62_maven/crm/crm_web/target/classes/spring/applicationContext_web.xml]
+19:11:33,897  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from file [/Users/Shared/练习/就业班/day62_maven/crm/crm_dao/target/classes/spring/applicationContext.xml]
+19:11:34,206  INFO PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [spring/jdbc.properties]
+19:11:34,221  INFO AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19:11:34,342  INFO MLog:80 - MLog clients using log4j logging.
+19:11:34,590  INFO C3P0Registry:204 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+19:11:35,065  INFO Version:37 - HHH000412: Hibernate Core {5.0.7.Final}
+19:11:35,070  INFO Environment:213 - HHH000206: hibernate.properties not found
+19:11:35,074  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+19:11:35,192  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+19:11:35,584  INFO AbstractPoolBackedDataSource:462 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2tcmbm9u5rco8b5gd9cn|786d0ef7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcmbm9u5rco8b5gd9cn|786d0ef7, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql:///crm?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+19:11:36,021  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:11:36,100  INFO LobCreatorBuilderImpl:98 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+19:11:36,536  WARN UUIDHexGenerator:42 - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+19:11:37,370  INFO SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+19:11:37,716  INFO HibernateTransactionManager:357 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 2tcmbm9u5rco8b5gd9cn|786d0ef7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcmbm9u5rco8b5gd9cn|786d0ef7, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql:///crm?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+19:11:37,792  INFO ContextLoader:347 - Root WebApplicationContext: initialization completed in 4466 ms
+19:11:38,075  INFO XmlConfigurationProvider:46 - Parsing configuration file [struts-default.xml]
+19:11:38,177  INFO XmlConfigurationProvider:46 - Parsing configuration file [struts-plugin.xml]
+19:11:38,206  INFO XmlConfigurationProvider:46 - Parsing configuration file [struts.xml]
+19:11:38,211  INFO AbstractBeanSelectionProvider:46 - Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+19:11:38,211  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+19:11:38,211  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+19:11:38,212  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+19:11:38,212  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+19:11:38,213  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+19:11:38,213  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+19:11:38,213  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+19:11:38,214  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+19:11:38,214  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+19:11:38,214  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+19:11:38,215  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+19:11:38,215  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+19:11:38,216  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+19:11:38,216  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+19:11:38,216  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+19:11:38,217  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+19:11:38,217  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+19:11:38,217  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+19:11:38,218  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+19:11:38,218  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+19:11:38,218  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+19:11:38,219  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+19:11:38,220  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+19:11:38,220  INFO AbstractBeanSelectionProvider:46 - Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+19:11:38,221  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+19:11:38,224  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+19:11:38,225  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+19:11:38,226  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+19:11:38,226  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+19:11:38,226  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+19:11:38,227  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+19:11:38,227  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.util.ContentTypeMatcher)
+19:11:38,228  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+19:11:38,228  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+19:11:38,229  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+19:11:38,229  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+19:11:38,229  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+19:11:38,230  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+19:11:38,230  INFO AbstractBeanSelectionProvider:46 - Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+19:11:38,263  INFO StrutsSpringObjectFactory:46 - Initializing Struts-Spring integration...
+19:11:38,263  INFO SpringObjectFactory:46 - Setting autowire strategy to name
+19:11:38,264  INFO StrutsSpringObjectFactory:46 - ... initialized Struts-Spring integration successfully
+19:12:14,771  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+19:12:14,956  WARN HqlSqlWalker:992 - [DEPRECATION] Encountered positional parameter near line 1, column 48 in HQL: [from com.pri.crm.domain.User where user_code = ? and user_password = ? and user_state = 1].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+19:12:14,959  WARN HqlSqlWalker:992 - [DEPRECATION] Encountered positional parameter near line 1, column 70 in HQL: [from com.pri.crm.domain.User where user_code = ? and user_password = ? and user_state = 1].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+19:12:19,240  WARN HqlSqlWalker:992 - [DEPRECATION] Encountered positional parameter near line 1, column 57 in HQL: [from com.pri.crm.domain.BaseDict where dict_type_code = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.

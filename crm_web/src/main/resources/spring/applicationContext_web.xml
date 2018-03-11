@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:contex="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+   <!--打开注解开关-->
+    <contex:component-scan base-package="com.pri"/>
+
+    <!-- 生成验证图片需要为多例,默认情况为单例 -->
+    <bean id="validateCode" class="cn.dsna.util.images.ValidateCode" scope="prototype">
+        <constructor-arg index="0">
+            <value>80</value>
+        </constructor-arg>
+        <constructor-arg index="1">
+            <value>20</value>
+        </constructor-arg>
+        <constructor-arg index="2">
+            <value>4</value>
+        </constructor-arg>
+        <constructor-arg index="3">
+            <value>10</value>
+        </constructor-arg>
+    </bean>
+
+</beans>
